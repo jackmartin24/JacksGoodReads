@@ -1,0 +1,289 @@
+@charset "utf-8";
+/*
+	Project Version 3
+	Stylesheet
+	Author: Jack Martin
+	Date:   5/21/2019
+*/
+
+/* html styles */
+
+html {
+	background: url(paintback.png) 100%/cover no-repeat fixed;
+	font-family: sans-serif;
+}
+
+/* body styles */
+body {
+	background-color: grey;
+	background-color: rgb(150, 150, 175);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: rgb(22, 22, 22) 25px 0px 45px, rgb(22, 22, 22) -25px 0px 45px;
+}
+
+/*image styles */
+
+img#banner {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 90%;
+	clear: both;
+}
+
+img.cover {
+	float:left;
+	width: 200px;
+	position: relative;
+	padding-right: 5%;
+	padding-bottom: 1%;
+	-webkit-filter: drop-shadow(0px 0px 9px rgba(190, 190, 190));
+	filter: drop-shadow(0px 0px 9px rgba(190, 190, 190));
+}
+
+figure > figcaption {
+	color: white;
+}
+
+/* header styles */
+header {
+	text-align: center;
+	background: black;
+}
+/*heading styles */
+h1, h2, h3, h4, h5 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+
+h1 {
+	background-color: grey;
+	background-color: rgb(110, 110, 130);
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2 {
+	background-color: orange;
+	text-align: center;
+	font-size: 3em;
+}
+
+h3 {
+	background-color: purple;
+	text-align: center;
+	font-size: 3em;
+}
+
+h4 {
+	background-color: Cyan;
+	text-align: center;
+	font-size: 3em;
+}
+
+h5 {
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 3em;
+}
+
+/*paragraph and blockquote styles */
+
+p {
+	background-color: blue;
+	background-color: rgb(100, 150, 200);
+	font-size: 1.4em;
+	text-align: center;
+	padding: 10px 25px 10px 25px;
+}
+
+blockquote{
+	font-size: 1.3em;
+	background-color: black;
+	color: grey;
+	float: left;
+	padding: 10px;
+}
+
+blockquote::first-letter {
+	font-size: 1.5em;
+}
+
+/* navigation styles */
+nav > ul > li {
+	text-align: center;
+	list-style-type: none;
+	font-size: 2em;
+	display: block;
+	float: right;
+	width: 20%;
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited {
+	color: ivory;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: purple;
+	background-color: rgb(100, 50, 100);
+}
+
+nav > ui > li > a:hover, nav >ul > li > a:active {
+	color: ivory;
+	background-color: pink;	
+}
+
+
+/*Organized list styles */
+
+ol {
+	padding: 0%;
+}
+
+ol > li {
+	text-align: center;
+	list-style-type: none;
+}
+
+ol > li > a {
+	text-decoration: none;
+}
+
+ol > li:first-of-type {
+	list-style-type: none;
+	font-size: 1.5em;
+	font-family: fantasy;
+	background-color: black;
+	color: white;
+	margin-bottom: 5px;
+}
+
+/* Table and column Styles */
+/*M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+The table goes across the whole page and is bordered to it pops out differently from the rest of the page*/
+table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.7%;
+	text-align: center;
+	border: 5px solid rgb(80, 70, 70);
+}
+
+table th, table td {
+	border: 5px solid rgb(90, 75, 75);
+}
+
+thead, table th {
+	color: rgb(170,170,195);
+	background-color: rgb(45, 45, 60);
+}
+
+col#title {
+	width: 20%;
+}
+
+col#fill {
+	width: 13%;
+}
+
+col#feel {
+	width: 28%;
+}
+
+/*section styles */
+
+.scifi {
+	background-color: green;
+	background-color: rgb(120, 180, 120);
+}
+
+.fantasy {
+	background-color: blue;
+	background-color: rgb(120, 120, 180);
+}
+
+section.booklist {
+	background-color: green;
+	background-color: rgb(75, 150, 150);
+	text-align: center;
+}
+
+
+section.updates {
+	background-color: red;
+	background-color: rgb(200, 150, 100);
+	text-align: center;
+}
+
+section#v1 {
+	color: blue;
+}	
+
+/* footer styles */
+
+footer {
+	background-color: black;
+	background-color: rgb(0, 0, 10);
+	background-image: linear-gradient(rgb(0, 0, 0) 50%, rgba(40, 40, 40, 0.8) 50%);
+	color: white;
+	text-align: center;
+	font-size: 1em;
+	position: fixed;
+	width: 80%;
+	bottom:0;
+}
+
+footer > a[href] {
+	font-family: fantasy;
+}
+
+/*media styles */
+/*M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+everything below only effects smaller devices.*/
+@media only screen and (max-width: 480px) {
+	img#banner {
+		width: 100%;
+	}
+	
+	img.cover {
+		width: 100%;
+	}
+	/*M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
+	This lets me move the header navigation around*/
+	/*M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
+	This makes the header navigation display vertically*/
+	
+	header > nav > ul {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	/*M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
+	Confirms the order on mobile phones*/
+	#v1 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-order: 98;
+		order: 98;
+	}
+	
+	#v2 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-order: 99;
+		order: 99;
+	}
+	
+	#v3 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-order: 100;
+		order: 100;
+	}
+}
