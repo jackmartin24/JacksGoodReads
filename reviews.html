@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--
-	Project Version 2
+	Project Version 4
    
 	Book Reviews
 	Author: Jack Martin
@@ -58,12 +58,19 @@
 			When Wade stumbles upon the first clue, he finds himself beset by players willing to kill to take this ultimate prize.
 			The race is on, and if Wade's going to survive, he'll have to win—and confront the real world he's always been so desperate to escape.
 	</blockquote>
-	<p>
+	
+	
+	<p id="youtube">
 		I really enjoyed the book. There were many references to the 80s and it was just a fun read. I would say the main
 		villian was a little flat but it still didn't effect the story much. I would recommend this book <strong>9/10</strong>.<br>
 		-<em>Jack</em><br><br>
-		<strong>P.S.</strong> The book is better than the movie (although I did enjoy the movie as well).		
+		<!--M8LO9  Demonstrate the use of the iframe element (HTML)-->
+		<iframe width="320" height="175" src="https://www.youtube.com/embed/cSp1dM2Vj48" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<strong>P.S.</strong> I'm putting this here because I did enjoy the movie. I would say the story is not as good as the book and it is not as clever.
+		But, it does understand the feeling of the book, which is just nostalgic fun.<br>
+		-<em>Jack</em>
 	</p>
+		
 	<h3 id="b2">Ender's Game by Orson Scott Card</h3>
 	<blockquote>
 	<img class="cover" src="end_cover.jpg" alt="Ender's Game" />
@@ -133,8 +140,6 @@
 		Overall <strong>7.5/10</strong>, it's a story that makes you hate the main character so much you want to see it till the
 		end.<br><br>-<em>Jack</em>
 	</section>
-	<!--M6LO3 Demonstrate how to create a table (HTML, explain table's purpose; it needs to be appropriate data for a table, and have at least 2 columns and 3 rows, appropriate use of thead/tbody/tfooter, and cells using th/td appropriately)
-	This table is there to give a more central and generalized viewing space for the books that I reviewed and my thoughts on them-->
 	<table>
 		<caption id="tb">General summary of my reviews.</caption>
 		<colgroup>
@@ -188,17 +193,39 @@
 		</tbody>
 		<tfoot>
 			<tr>
-			<!--M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
-			Column-->
 				<th colspan="6">If you think its weird the books are all rated fairly high,<br>I wouldn't finish them if they were bad.</th>
 			</tr>
 		</tfoot>
 	</table>
+	<h6 id="getform">What should I review next?</h6>
+	<form method="get" action="#">
+		<fieldset>
+			<!--M7LO5 Demonstrate the use of a text box in a form-->
+			<label>Your Name:</label> <input type="text" name="person">
+			<label>Book:</label> <input type="text" name="book">
+			<label>Genre:</label> <input type="text" name="genre">
+			<!--M7LO8 Demonstrate the use of a selection list in a form-->
+			<label>Rating:</label> <select name="rating">
+						<option value="0">0-default</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+			<!--M7LO10 Demonstrate the use of a submit button in a form-->
+			<div id="submit"><input type="submit" value="Submit"></div>
+		</fieldset>
+	</form>
 	
 	<footer>
 		I did not write the summaries for the books. I got the summary from <a href="https://www.goodreads.com/">Good Reads</a>. Acedemic Fair Use.
 	</footer>
 </body>
-
 
 </html>
